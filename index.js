@@ -122,7 +122,7 @@ function generateHTML(answers) {
 promptUser()
   .then(function(data){
       const htmlText= generateHTML(data);
-      writeFileAsync("Index.html", htmlText);
+      writeFileAsync("index.html", htmlText);
      console.log(htmlText);
     console.log(data.city, data.location)
   })
